@@ -1,0 +1,35 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "version": "1.0.0",
+    "title": "Throttle CI/CD Queue Webhook ",
+    "description": "This is spartan",
+    "license": {
+      "name": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  },
+  "paths": {
+    "/api/queue": {
+      "get": {
+        "responses": {
+        }
+      },
+      "post": {
+        "responses": {
+          "405": {
+            "description": "Validation exception"
+          }
+        }}
+    },
+    "/api/queue/{queueItemId}": {
+      "get": {
+        "responses": {
+          "404": {
+            "description": "Queue item not found"
+          }
+        }
+      }
+    }
+  }
+}
